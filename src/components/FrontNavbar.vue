@@ -19,7 +19,7 @@
 <style lang="scss" scoped>
   .nav {
     background-image: url('../../public/images/Lobby/平台svg/lobby_top_bar.svg');
-    height: 1rem;
+    height: .75rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
