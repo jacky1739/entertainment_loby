@@ -55,7 +55,7 @@
             margin-right: .2rem;
         }
         &__id {
-            width: 2rem;
+            width: 1.6rem;
             min-height: 100%;
             position: relative;
             &__bg {
@@ -75,7 +75,7 @@
                 height: .2rem;
             }
             &__number {
-                padding: 0 0 .03rem 0.1rem;
+                padding: 0 0 .04rem 0.1rem;
                 border-bottom: 1px solid white;
                 color: white;
                 &__id {
@@ -131,6 +131,10 @@
             z-index: 2;
         }
       }
+  }
+  .social__setting:hover {
+    transition: all .3s;
+    transform: scale(1.3);
   }
 </style>
 
