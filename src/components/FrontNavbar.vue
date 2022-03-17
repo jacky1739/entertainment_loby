@@ -7,10 +7,15 @@
       <div class="user__id">
         <p class="user__id__number">ID12345678</p>
         <div class="user__id__bg">
-          <p></p>
+          <span class="user__id__icon">
+            <img src="../../public/images/Lobby/平台svg/lobby_player_id_icon.svg" alt="">
+          </span>
+          <p class="user__id__number">ID12345678</p>
         </div>
       </div>
-      <div class="user__money"></div>
+      <div class="user__money">
+        <p class="user__id__number">123,123,123.00</p>
+      </div>
     </div>
     <div>
       <div class="line">
@@ -30,26 +35,51 @@
     justify-content: space-between;
     align-items: center;
     .user {
-      width: 20%;
+      // border: 1px solid black;
+      // width: 35%;
       margin-left: 2%;
       display: flex;
       &__img {
-        width: .6rem;
+        border: 1px solid black;
+        width: 1.6rem;
         height: .6rem;
+        margin-right: .2rem;
       }
       &__id {
-        margin-left: 12%;
+        border: 1px solid black;
+        width: 100%;
+        margin-right: .4rem;
         &__bg {
           background-image: url('../../public/images/Lobby/平台svg/lobby_player_id_bg.svg');
-          background-size: cover;
+          background-size: contain;
           background-position: center center;
           background-repeat: no-repeat;
           width: 100%;
-          height: .3rem;
+          min-height: 80%;
+          display: flex;
+          padding-left: .1rem;
+          align-items: center;
         }
         &__number {
           color: white;
         }
+        &__icon {
+          width: .2rem;
+          height: .2rem;
+        }
+      }
+      &__money {
+        background-image: url('../../public/images/Lobby/平台svg/lobby_player_own_point.svg');
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        line-height: .6rem;
       }
     }
   }

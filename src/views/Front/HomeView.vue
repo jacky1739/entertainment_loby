@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import Navbar from '../../components/FrontNavbar.vue'
+import Navbar from '../../components/FrontTest.vue'
 
 export default {
   name: 'HomeView',
