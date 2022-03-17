@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 100px;
+  }
+  
+  body {
+    font-size: .12rem;
+    font-family: montserrat;
+  }
+  
+  .container {
+    max-width: 11.4rem;
+    margin: 0 auto;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
