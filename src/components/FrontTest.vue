@@ -6,6 +6,9 @@
         </li>
         <li class="user__id">
             <p class="user__id__number">ID12345678</p>
+            <div class="user__linner">
+                <img src="../../public/images/Lobby/平台svg/lobby_linner.svg" alt="">
+            </div>
             <div class="user__id__bg">
                 <span class="user__id__icon">
                     <img src="../../public/images/Lobby/平台svg/lobby_player_id_icon.svg" alt="">
@@ -49,6 +52,10 @@
     .user {
         display: flex;
         padding-left: 1%;
+        &__linner {
+            height: .04rem;
+            width: 100%;
+        }
         &__img {
             width: .6rem;
             height: .6rem;
@@ -76,7 +83,6 @@
             }
             &__number {
                 padding: 0 0 .04rem 0.1rem;
-                border-bottom: 1px solid white;
                 color: white;
                 &__id {
                     color: white;
