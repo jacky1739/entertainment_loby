@@ -106,6 +106,9 @@
       justify-content: space-between;
       align-items: center;
       position: relative;
+      right: 0;
+      top: 0;
+      overflow: hidden;
       &__link {
           width: 100%;
           height: .9rem;
@@ -118,13 +121,14 @@
           height: .65rem;
           position: relative;
           z-index: 2;
+          border: 1px solid black;
         &__bg {
             position: absolute;
-            z-index: 0;
-            width: 2rem;
-            right: -67px;
+            transform: scale(3.1);
+            float: right;
+            width: 100%;
             top: -3px;
-            transform: scale(1.5);
+            right: 15px;
         }
         &__icon {
             position: absolute;
