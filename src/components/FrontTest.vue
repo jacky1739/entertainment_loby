@@ -138,7 +138,7 @@
   }
   .social__setting:hover {
     transition: all .3s;
-    transform: scale(1.3);
+    transform: scale(1.12);
   }
 </style>
 
