@@ -4,7 +4,7 @@
       <li class="login__img">
       </li>
       <li class="login__subtitle">
-        <p class="login__subtitle__word">------------ 登入 -------------</p>
+        <p class="login__subtitle__word"><span style="text-decoration: line-through 5px">-------------</span> 登入 -------------</p>
       </li>
       <li class="login__input">
         <input class="login__input__content" type="text">
@@ -13,10 +13,14 @@
         <input class="login__input__content" type="text">
       </li>
       <li class="login__errorMessage">
-        <p>帳號密碼有誤</p>
+        <p class="login__errorMessage__word">
+          <span><img class="login__errorMessage__icon" src="../../../public/images/Lobby/平台svg/loginpage_error.svg" alt=""></span>帳號密碼有誤
+        </p>
       </li>
-      <li class="login__btn">
-        <button></button>
+      <li class="login__btn" >
+        <a href="/login" class="login__btn__submit" @click="onClick">
+          <img src="../../../public/images/Lobby/平台svg/btn_login_normal.svg" alt="">
+        </a>
       </li>
     </ul>
   </div>
@@ -75,5 +79,39 @@
       color: white;
     }
   }
+  &__errorMessage {
+    text-align: center;
+    width: 1.4rem;
+    height: .25rem;
+    margin: 0 auto;
+    margin-bottom: .4rem;
+    &__word {
+      line-height: .25rem;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      background: #B80000;
+      color: white;
+      border-radius: 5px;
+    }
+    &__icon {
+      width: 100%;
+      height: .18rem;
+    }
+  }
+  &__btn {
+    margin: 0 auto;
+    width: 1rem;
+  }
 }
 </style>
+
+<script>
+export default {
+  methods: {
+    onClick () {
+      console.log('click')
+    }
+  }
+}
+</script>
