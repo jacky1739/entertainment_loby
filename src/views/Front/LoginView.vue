@@ -31,6 +31,7 @@
   background-image: url('../../../public/images/Lobby/平台svg/loginpage_bg.svg');
   background-repeat: no-repeat;
   background-position: top center;
+  background-size: cover;
   width: 100%;
   height: 100vh;
   display: flex;

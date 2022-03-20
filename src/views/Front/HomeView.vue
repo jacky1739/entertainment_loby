@@ -17,6 +17,7 @@
         background-image: url('../../../public/images/Lobby/平台svg/lobby_bg.svg');
         background-repeat: no-repeat;
         background-position: center center;
+        background-size: cover;
         position: fixed;
         width: 100%;
         height: calc(100% - .8rem);
