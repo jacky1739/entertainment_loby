@@ -12,6 +12,9 @@
             <a href=""><img src="../../../public/images/Lobby/遊戲icon/png/新icon公版_龍虎鬥.png" alt=""></a>
         </li>
     </ul>
+    <div class="next__page">
+        <a href="#"><img src="../../../public/images/Lobby/平台svg/lobby_next_page.svg" alt=""></a>
+    </div>
 </template>
 
 <style lang="scss" scoped>
@@ -22,5 +25,11 @@
     height: 50%;
     margin: 0 .2rem 1rem 0;
   }
+}
+.next__page {
+  width: 1rem;
+  height: auto;
+  position: absolute;
+  right: 0;
 }
 </style>
