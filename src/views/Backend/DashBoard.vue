@@ -11,7 +11,9 @@
     </nav>
     <div class="content">
         <section class="content__sideBar">
-            <div></div>
+            <div class="content__sideBar__idBg">
+                <p class="content">ID12345678</p>
+            </div>
             <ul>
                 <li></li>
                 <li></li>
