@@ -1,10 +1,10 @@
 <template>
-  <div class="wrapper">
+  <main class="wrapper">
     <ul class="login">
       <li class="login__img">
       </li>
       <li class="login__subtitle">
-        <p class="login__subtitle__word"><span style="text-decoration: line-through 5px">-------------</span> 登入 -------------</p>
+        <sapn class="login__subtitle__line"></sapn><p class="login__subtitle__word">登入</p><sapn class="login__subtitle__line"></sapn>
       </li>
       <li class="login__input">
         <input class="login__input__content" type="text">
@@ -12,7 +12,7 @@
       <li class="login__input">
         <input class="login__input__content" type="text">
       </li>
-      <li class="login__errorMessage">
+      <li class="login__errorMessage" v-show="errorMessage">
         <p class="login__errorMessage__word">
           <span><img class="login__errorMessage__icon" src="../../../public/images/Lobby/平台svg/loginpage_error.svg" alt=""></span>帳號密碼有誤
         </p>
@@ -23,7 +23,7 @@
         </a>
       </li>
     </ul>
-  </div>
+  </main>
 </template>
 
 <style lang="scss" scoped>
@@ -52,10 +52,19 @@
   &__subtitle {
     margin: 0 auto;
     margin-bottom: .3rem;
+    display: flex;
     &__word {
       text-align: center;
       font-size: .2rem;
       color: white;
+    }
+    &__line {
+      background-image: url('../../../public/images/Lobby/平台svg/lobby_loginline.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 44.2%;
+      height: auto;
     }
   }
   &__input {
@@ -109,6 +118,11 @@
 
 <script>
 export default {
+  data () {
+    return {
+      errorMessage: false
+    }
+  },
   methods: {
     onClick () {
       console.log('click')
