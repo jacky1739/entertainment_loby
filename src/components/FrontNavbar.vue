@@ -31,7 +31,7 @@
                 <img class="social__image" src="../../public/images/Lobby/平台svg/btn_personal_center_normal.svg" alt="">
             </a>
         </li>
-        <li class="social__setting">
+        <li class="social__setting" ref="setting">
             <img class="social__setting__bg" src="../../public/images/Lobby/平台svg/info_bg.svg" alt="">
             <a href="#" @click="click">
                 <img class="social__setting__icon" src="../../public/images/Lobby/平台svg/lobby_btn_info_normal.svg" alt="">
@@ -42,10 +42,11 @@
 </template>
 
 <style lang="scss" scoped>
+@import '../style/mixin';
   .nav {
     background-image: url('../../public/images/Lobby/平台svg/lobby_top_bar.svg');
     height: .75rem;
-    width: 100%;
+    @include bgImg;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -154,6 +155,9 @@ export default {
     click () {
       console.log('click')
     }
+  },
+  mounted () {
+    console.log(this.$refs.setting)
   }
 }
 </script>

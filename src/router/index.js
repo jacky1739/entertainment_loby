@@ -18,6 +18,18 @@ const routes = [
     path: '/login',
     name: 'login',
     component: () => import('../views/Front/LoginView.vue')
+  },
+  {
+    path: '/admin',
+    name: 'admin',
+    component: () => import('../views/Backend/AdminView.vue'),
+    children: [
+      {
+        path: '',
+        name: '',
+        component: () => import('../views/Backend/DashBoard.vue')
+      }
+    ]
   }
 ]
 
