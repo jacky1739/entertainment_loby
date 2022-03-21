@@ -12,8 +12,8 @@
       <li class="login__input">
         <input class="login__input__content" type="text">
       </li>
-      <li class="login__errorMessage" v-show="errorMessage">
-        <p class="login__errorMessage__word">
+      <li class="login__errorMessage">
+        <p class="login__errorMessage__word" v-show="showError">
           <span><img class="login__errorMessage__icon" src="../../../public/images/Lobby/平台svg/loginpage_error.svg" alt=""></span>帳號密碼有誤
         </p>
       </li>
@@ -96,6 +96,8 @@
     margin: 0 auto;
     margin-bottom: .4rem;
     &__word {
+      width: 1.4rem;
+      height: .25rem;
       line-height: .25rem;
       display: flex;
       justify-content: space-evenly;
@@ -120,7 +122,7 @@
 export default {
   data () {
     return {
-      errorMessage: false
+      showError: true
     }
   },
   methods: {
