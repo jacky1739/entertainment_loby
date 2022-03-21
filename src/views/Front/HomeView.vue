@@ -2,6 +2,7 @@
   <main class="body">
     <Navbar />
     <div class="wrapper">
+      <router-view/>
     </div>
     <Footer />
   </main>
@@ -18,8 +19,10 @@
   background-attachment: fixed;
   background-size: cover;
   position: fixed;
-  min-width: 100%;
-  min-height: 100vh;
+  width: 100%;
+  height: calc(100vh - 1.3rem);
+  display: flex;
+  align-items: center;
 }
 </style>
 

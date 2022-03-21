@@ -122,7 +122,7 @@
 export default {
   data () {
     return {
-      showError: true
+      showError: false
     }
   },
   methods: {

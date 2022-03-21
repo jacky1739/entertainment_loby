@@ -10,7 +10,7 @@ const routes = [
       {
         path: '',
         name: '',
-        component: () => import('../views/Front/IndexView.vue')
+        component: () => import('../views/Front/TestView.vue')
       }
     ]
   },
