@@ -1,7 +1,7 @@
 <template>
-  <div class="modal">
+  <div class="modal" v-if="isShow">
     <div class="modal__cancel">
-      <a href="#"><img src="../../public/images/Lobby/平台svg/ibfo_bdm_setting_exit_normal.svg" alt=""></a>
+      <a href="#" @click="click"><img src="../../public/images/Lobby/平台svg/ibfo_bdm_setting_exit_normal.svg" alt=""></a>
     </div>
     <div class="modal__bg">
       <h2 class="modal__title">設定</h2>
@@ -64,6 +64,17 @@
 
 <script>
 export default {
-  name: 'ModalItem'
+  name: 'ModalItem',
+  data () {
+    return {
+      isShow: false
+    }
+  },
+  methods: {
+    click () {
+      this.isShow = !this.isShow
+      console.log('click')
+    }
+  }
 }
 </script>
