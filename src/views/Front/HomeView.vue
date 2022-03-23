@@ -2,6 +2,7 @@
   <main class="body">
     <Navbar />
     <div class="wrapper">
+      <Modal />
       <router-view/>
     </div>
     <Footer />
@@ -29,11 +30,12 @@
 <script>
 import Navbar from '../../components/FrontNavbar.vue'
 import Footer from '@/components/FooterItem.vue'
+import Modal from '../../components/ModalItem.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    Navbar, Footer
+    Navbar, Footer, Modal
   }
 }
 </script>

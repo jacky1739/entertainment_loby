@@ -37,14 +37,30 @@
                     </a>
                 </div>
             </li>
-            <li class="d-flex h">
+            <li class="search__group">
                 <p>查詢時間</p>
                 <input type="text">
                 <p>~</p>
                 <input type="text">
-                <input type="text">
-                <p>遊戲類型</p>
-                <input type="text">
+                <select name="date" id="date_select">
+                    <option value="本日">本日</option>
+                    <option value="昨日">昨日</option>
+                    <option value="本週">本週</option>
+                    <option value="上週">上週</option>
+                    <option value="本月">本月</option>
+                    <option value="上月">上月</option>
+                </select>
+                <label for="game_select">遊戲類型</label>
+                <select name="games" id="game_select">
+                    <option value="">全部</option>
+                    <option value="5PK">5PK</option>
+                    <option value="7PK">7PK</option>
+                    <option value="滿天星">滿天星</option>
+                    <option value="百人幸運輪">百人幸運輪</option>
+                    <option value="小瑪莉">小瑪莉</option>
+                </select>
+                <div></div>
+                <div></div>
             </li>
             <li>
                 <table class="content__table">
@@ -123,10 +139,6 @@
         color: white;
     }
   }
-  .content {
-    width: 100%;
-    // background: black;
-  }
 }
 .content {
   padding: .5rem .9rem;
@@ -138,11 +150,25 @@
     margin-bottom: .3rem;
   }
   &__table {
-    border: 1px solid white;
+    border: 2px solid #856E8F;
     width: 100%;
+    border-radius: 10px;
     &__thead {
       tr {
+          background: #533963;
         th {
+          width: calc(100% / 6);
+          text-align: center;
+          padding: .2rem;
+          font-size: .2rem;
+          border-bottom: 2px solid #856E8F;
+          border-right: 2px solid #856E8F;
+        }
+      }
+    }
+    &__tbody {
+      tr {
+        td {
           width: calc(100% / 6);
           text-align: center;
           padding: .2rem;
@@ -152,9 +178,34 @@
     }
   }
 }
+.search__group {
+  display: flex;
+  justify-content: space-between;
+  height: .4rem;
+  margin-bottom: .3rem;
+}
 .total {
     p {
         font-size: .18rem;
     }
 }
 </style>
+
+<script>
+export default {
+  data () {
+    return {
+      dateSelect: [
+        {
+          title: '本日',
+          value: '本日'
+        },
+        {
+          title: '昨日',
+          vale: '昨日'
+        }
+      ]
+    }
+  }
+}
+</script>
