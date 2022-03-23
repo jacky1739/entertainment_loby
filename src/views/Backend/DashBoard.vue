@@ -9,17 +9,16 @@
             </a>
         </div>
     </nav>
-    <div class="content">
-        <section class="content__sideBar">
-            <div class="content__sideBar__idBg">
-                <p class="content">ID12345678</p>
-            </div>
-            <ul>
-                <li></li>
-                <li></li>
-            </ul>
-        </section>
-        <main></main>
+    <div class="main__box d-flex">
+        <ul class="menu">
+            <li></li>
+            <li><a href="#"><img src="../../../public/images/Lobby/平台svg/list_searchbet_normal.svg" alt=""></a></li>
+            <li><a href="#"><img src="../../../public/images/Lobby/平台svg/list_accountdetail_normal.svg" alt=""></a></li>
+        </ul>
+        <ul class="content">
+            <li></li>
+            <li></li>
+        </ul>
     </div>
 </template>
 
@@ -28,7 +27,7 @@
 .nav {
   background-image: url('../../../public/images/Lobby/平台svg/lobby_top_bar.svg');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center bottom 12%;
   background-size: cover;
   height: .77rem;
   display: flex;
@@ -44,13 +43,15 @@
     width: .7rem;
   }
 }
-.content {
-  width: auto;
-  height: calc(100vh - .77rem);
-  &__sideBar {
+.main__box {
+  height: calc(100vh - .7rem);
+  .menu {
     background-image: url('../../../public/images/Lobby/平台svg/list_leftbar.svg');
-    height: 100%;
-    width: 20%;
+    width: 30%;
+  }
+  .content {
+    width: 100%;
+    background: black;
   }
 }
 </style>
