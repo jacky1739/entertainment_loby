@@ -38,6 +38,14 @@
             </a>
         </li>
     </ul>
+    <ul class="popUp" v-if="isShow">
+        <li>
+            <a href="#"><img src="../../public/images/Lobby/平台svg/btn_bgm_normal.svg" alt=""></a>
+        </li>
+        <li>
+            <a href="#"><img src="../../public/images/Lobby/平台svg/btn_exit_normal.svg" alt=""></a>
+        </li>
+    </ul>
   </nav>
 </template>
 
@@ -147,12 +155,29 @@
     transition: all .3s;
     transform: scale(1.12);
   }
+
+  .popUp {
+    border: 2px solid black;
+    background-color: rgba(black, 0.6);
+    border-radius: 20px;
+    padding: 1px;
+    position: absolute;
+    right: 0;
+    top: 93px;
+    z-index: 10;
+  }
 </style>
 
 <script>
 export default {
+  data () {
+    return {
+      isShow: false
+    }
+  },
   methods: {
     click () {
+      this.isShow = !this.isShow
       console.log('click')
     }
   },
