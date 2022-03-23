@@ -22,8 +22,60 @@
             </li>
         </ul>
         <ul class="content">
-            <li></li>
-            <li></li>
+            <li class="content__btn__group">
+                <div class="d-flex">
+                    <a href="#">
+                        <img src="../../../public/images/Lobby/平台svg/list_betdetail1_normal.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="../../../public/images/Lobby/平台svg/list_betdetail2_normal.svg" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                      <img src="../../../public/images/Lobby/平台svg/list_betdetail1_normal.svg" alt="">
+                    </a>
+                </div>
+            </li>
+            <li class="d-flex h">
+                <p>查詢時間</p>
+                <input type="text">
+                <p>~</p>
+                <input type="text">
+                <input type="text">
+                <p>遊戲類型</p>
+                <input type="text">
+            </li>
+            <li>
+                <table class="content__table">
+                    <thead class="content__table__thead">
+                        <tr>
+                            <th>日期</th>
+                            <th>遊戲類型</th>
+                            <th>房間</th>
+                            <th>下注點數</th>
+                            <th>贏得點數</th>
+                            <th>會員輸贏</th>
+                        </tr>
+                    </thead>
+                    <tbody class="content__table__tbody">
+                        <tr>
+                            <td>2022-03-02</td>
+                            <td>AK滿天星</td>
+                            <td>1234</td>
+                            <td>1000.0000</td>
+                            <td>100.0000</td>
+                            <td>-900.0000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li class="d-flex justify-content-space-between total">
+                <p>總筆數: 1000000</p>
+                <p>總下注數: 12,345,678.0000</p>
+                <p>總派彩: 12,345,678.0000</p>
+                <p>會員輸贏: 1,234,567.0000</p>
+            </li>
         </ul>
     </div>
 </template>
@@ -73,7 +125,36 @@
   }
   .content {
     width: 100%;
-    background: black;
+    // background: black;
   }
+}
+.content {
+  padding: .5rem .9rem;
+  width: 100%;
+  background: #000;
+  &__btn__group {
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: .3rem;
+  }
+  &__table {
+    border: 1px solid white;
+    width: 100%;
+    &__thead {
+      tr {
+        th {
+          width: calc(100% / 6);
+          text-align: center;
+          padding: .2rem;
+          font-size: .2rem;
+        }
+      }
+    }
+  }
+}
+.total {
+    p {
+        font-size: .18rem;
+    }
 }
 </style>

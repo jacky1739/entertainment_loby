@@ -24,3 +24,22 @@
   .d-flex {
     display: flex;
   }
+  .justify-content-space-between {
+    justify-content: space-between;
+  }
+  .align-items-center { 
+    align-items: center;
+  }
+
+  p {
+    color: white;
+  }
+
+  th, td {
+    color: white;
+  }
+
+  .h {
+    height: .4rem;
+    margin-bottom: .3rem;
+  }
