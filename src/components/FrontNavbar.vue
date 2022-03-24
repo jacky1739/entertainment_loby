@@ -131,30 +131,30 @@
           z-index: 3;
       }
       &__setting {
-          margin: 0 .15rem 0 .4rem;
+          margin: 0 .15rem 0 .7rem;
           width: 100%;
           height: .65rem;
           position: relative;
-          z-index: 2;
+        //   z-index: 2;
           border: 1px solid black;
         &__bg {
             position: absolute;
             transform: scale(3.1);
             float: right;
             width: 100%;
-            top: -3px;
+            top: -6px;
             right: 15px;
         }
         &__icon {
             position: absolute;
-            z-index: 2;
+            // z-index: 2;
         }
       }
   }
-  .social__setting:hover {
-    transition: all .3s;
-    transform: scale(1.12);
-  }
+//   .social__setting:hover {
+//     transition: all .3s;
+//     transform: scale(1.12);
+//   }
 
   .popUp {
     border: 2px solid black;
@@ -164,7 +164,7 @@
     position: absolute;
     right: 0;
     top: 93px;
-    z-index: 10;
+    z-index: 3;
   }
 </style>
 

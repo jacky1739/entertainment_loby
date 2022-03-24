@@ -1,37 +1,48 @@
 <template>
-  <div class="modal" v-if="isShow">
-    <div class="modal__cancel">
-      <a href="#" @click="click"><img src="../../public/images/Lobby/平台svg/ibfo_bdm_setting_exit_normal.svg" alt=""></a>
-    </div>
-    <div class="modal__bg">
-      <h2 class="modal__title">設定</h2>
-      <div class="modal__btn">
-        <p class="modal__btn__text d-flex">音效
-          <span class="d-flex bgm_bt_bg">
-            <span class="w-78">
-              <a v-show="music1" href="#" @click="switchBtn1"><img class="modal__btn__bgm" src="../../public/images/Lobby/平台svg/btn_bgm_off.svg" alt="">
+  <div class="overlayer" v-if="isShow">
+    <div class="modal" v-if="isShow">
+      <div class="modal__cancel">
+        <a href="#" @click="click"><img src="../../public/images/Lobby/平台svg/ibfo_bdm_setting_exit_normal.svg" alt=""></a>
+      </div>
+      <div class="modal__bg">
+        <h2 class="modal__title">設定</h2>
+        <div class="modal__btn">
+          <p class="modal__btn__text d-flex">音效
+            <span class="d-flex bgm_bt_bg">
+              <span class="w-78">
+                <a v-show="music1" href="#" @click="switchBtn1"><img class="modal__btn__bgm" src="../../public/images/Lobby/平台svg/btn_bgm_off.svg" alt="">
+                </a>
+              </span>
+              <a v-show="music2" href="#" @click="switchBtn1"><img class="modal__btn__bgm" src="../../public/images/Lobby/平台svg/btn_bgm_on.svg" alt="">
               </a>
             </span>
-            <a v-show="music2" href="#" @click="switchBtn1"><img class="modal__btn__bgm" src="../../public/images/Lobby/平台svg/btn_bgm_on.svg" alt="">
-            </a>
-          </span>
-        </p>
-        <p class="modal__btn__text d-flex">音效
-          <span class="d-flex bgm_bt_bg">
-            <span class="w-78">
-              <a v-if="music1" href="#" @click="switchBtn1"><img class="modal__btn__bgm" src="../../public/images/Lobby/平台svg/btn_bgm_off.svg" alt="">
+          </p>
+          <p class="modal__btn__text d-flex">音效
+            <span class="d-flex bgm_bt_bg">
+              <span class="w-78">
+                <a v-if="music1" href="#" @click="switchBtn1"><img class="modal__btn__bgm" src="../../public/images/Lobby/平台svg/btn_bgm_off.svg" alt="">
+                </a>
+              </span>
+              <a v-if="music2" href="#" @click="switchBtn1"><img class="modal__btn__bgm" src="../../public/images/Lobby/平台svg/btn_bgm_on.svg" alt="">
               </a>
             </span>
-            <a v-if="music2" href="#" @click="switchBtn1"><img class="modal__btn__bgm" src="../../public/images/Lobby/平台svg/btn_bgm_on.svg" alt="">
-            </a>
-          </span>
-        </p>
+          </p>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
+.overlayer {
+  position: fixed;
+  left:0;
+  top:0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.7);
+}
 .modal {
   position: absolute;
   top:50%;
