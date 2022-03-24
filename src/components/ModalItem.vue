@@ -6,8 +6,26 @@
     <div class="modal__bg">
       <h2 class="modal__title">設定</h2>
       <div class="modal__btn">
-        <p class="modal__btn__text">音效</p>
-        <p class="modal__btn__text">音效</p>
+        <p class="modal__btn__text d-flex">音效
+          <span class="d-flex bgm_bt_bg">
+            <span class="w-78">
+              <a v-show="music1" href="#" @click="switchBtn1"><img class="modal__btn__bgm" src="../../public/images/Lobby/平台svg/btn_bgm_off.svg" alt="">
+              </a>
+            </span>
+            <a v-show="music2" href="#" @click="switchBtn1"><img class="modal__btn__bgm" src="../../public/images/Lobby/平台svg/btn_bgm_on.svg" alt="">
+            </a>
+          </span>
+        </p>
+        <p class="modal__btn__text d-flex">音效
+          <span class="d-flex bgm_bt_bg">
+            <span class="w-78">
+              <a v-if="music1" href="#" @click="switchBtn1"><img class="modal__btn__bgm" src="../../public/images/Lobby/平台svg/btn_bgm_off.svg" alt="">
+              </a>
+            </span>
+            <a v-if="music2" href="#" @click="switchBtn1"><img class="modal__btn__bgm" src="../../public/images/Lobby/平台svg/btn_bgm_on.svg" alt="">
+            </a>
+          </span>
+        </p>
       </div>
     </div>
   </div>
@@ -49,6 +67,9 @@
     &__text {
       line-height: 1rem;
       font-size: .4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
     &__switch {
       background-image: url('../../public/images/Lobby/平台svg/btn_bgm_on.svg');
@@ -59,6 +80,11 @@
     }
   }
 }
+.bgm_bt_bg {
+  width: 1.5rem;
+  background: #323033;
+  border-radius: 15px;
+}
 </style>
 
 <script>
@@ -66,13 +92,19 @@ export default {
   name: 'ModalItem',
   data () {
     return {
-      isShow: true
+      isShow: true,
+      music1: false,
+      music2: true
     }
   },
   methods: {
     click () {
       this.isShow = !this.isShow
       console.log('click')
+    },
+    switchBtn1 () {
+      this.music1 = !this.music1
+      this.music2 = !this.music2
     }
   }
 }
