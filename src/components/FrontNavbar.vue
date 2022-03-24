@@ -128,7 +128,7 @@
           width: 100%;
           height: .9rem;
           margin-left: .2rem;
-          z-index: 3;
+        //   z-index: 3;
       }
       &__setting {
           margin: 0 .15rem 0 .7rem;
