@@ -15,7 +15,6 @@
 
 <style lang="scss" scoped>
 .modal {
-  width: 400px;
   position: absolute;
   top:50%;
   left: 50%;
@@ -39,8 +38,8 @@
     position: absolute;
     width: .88rem;
     height: auto;
-    top: -18px;
-    right: -223px;
+    top: -16px;
+    right: -23px;
   }
   &__btn {
     flex-direction: column;
@@ -67,7 +66,7 @@ export default {
   name: 'ModalItem',
   data () {
     return {
-      isShow: false
+      isShow: true
     }
   },
   methods: {

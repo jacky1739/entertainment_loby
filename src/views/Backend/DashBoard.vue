@@ -24,7 +24,7 @@
         <ul class="content">
             <li class="content__btn__group">
                 <div class="d-flex">
-                    <a href="#">
+                    <a class="mr-2" href="#">
                         <img src="../../../public/images/Lobby/平台svg/list_betdetail1_normal.svg" alt="">
                     </a>
                     <a href="#">
@@ -38,26 +38,26 @@
                 </div>
             </li>
             <li class="search__group">
-                <p>查詢時間</p>
+                <p class="search__group__text">查詢時間</p>
                 <input type="text">
-                <p>~</p>
+                <p class="search__group__text">~</p>
                 <input type="text">
                 <select name="date" id="date_select">
-                    <option value="本日">本日</option>
-                    <option value="昨日">昨日</option>
-                    <option value="本週">本週</option>
-                    <option value="上週">上週</option>
-                    <option value="本月">本月</option>
-                    <option value="上月">上月</option>
+                  <option value="本日">本日</option>
+                  <option value="昨日">昨日</option>
+                  <option value="本週">本週</option>
+                  <option value="上週">上週</option>
+                  <option value="本月">本月</option>
+                  <option value="上月">上月</option>
                 </select>
-                <label for="game_select">遊戲類型</label>
+                <label class="search__group__text" for="game_select">遊戲類型</label>
                 <select name="games" id="game_select">
-                    <option value="">全部</option>
-                    <option value="5PK">5PK</option>
-                    <option value="7PK">7PK</option>
-                    <option value="滿天星">滿天星</option>
-                    <option value="百人幸運輪">百人幸運輪</option>
-                    <option value="小瑪莉">小瑪莉</option>
+                  <option value="">全部</option>
+                  <option value="5PK">5PK</option>
+                  <option value="7PK">7PK</option>
+                  <option value="滿天星">滿天星</option>
+                  <option value="百人幸運輪">百人幸運輪</option>
+                  <option value="小瑪莉">小瑪莉</option>
                 </select>
                 <div></div>
                 <div></div>
@@ -126,17 +126,16 @@
         height: 1rem;
         background-image: url('../../../public/images/Lobby/平台svg/lobby_player_id_bg.svg');
         background-repeat: no-repeat;
-        background-size: 70%;
+        background-size: 60%;
         background-position: center;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    &__icon {
-        width: .3rem;
-    }
     &__id {
-        color: white;
+      line-height: .3rem;
+      font-size: .3rem;
+      color: white;
     }
   }
 }
@@ -169,7 +168,6 @@
     &__tbody {
       tr {
         td {
-          width: calc(100% / 6);
           text-align: center;
           padding: .2rem;
           font-size: .2rem;
@@ -183,6 +181,10 @@
   justify-content: space-between;
   height: .4rem;
   margin-bottom: .3rem;
+  &__text {
+    line-height: .4rem;
+    font-size: .3rem;
+  }
 }
 .total {
     p {

@@ -16,7 +16,6 @@
 .wrapper {
   background-image: url('../../../public/images/Lobby/平台svg/lobby_bg.svg');
   background-repeat: no-repeat;
-  // background-position: center bottom 12%;
   background-attachment: fixed;
   background-size: cover;
   position: fixed;
