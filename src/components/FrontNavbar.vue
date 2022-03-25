@@ -38,7 +38,7 @@
             </a>
         </li>
     </ul>
-    <ul class="popUp" v-if="isShow">
+    <ul class="popUp" v-show="isShow">
         <li>
             <a href="#"><img src="../../public/images/Lobby/平台svg/btn_bgm_normal.svg" alt=""></a>
         </li>

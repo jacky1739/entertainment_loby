@@ -1,6 +1,6 @@
 <template>
-  <div class="overlayer" v-if="isShow">
-    <div class="modal" v-if="isShow">
+  <div class="overlayer" v-show="isShow">
+    <div class="modal">
       <div class="modal__cancel">
         <a href="#" @click="click"><img src="../../public/images/Lobby/平台svg/ibfo_bdm_setting_exit_normal.svg" alt=""></a>
       </div>
@@ -20,10 +20,10 @@
           <p class="modal__btn__text d-flex">音效
             <span class="d-flex bgm_bt_bg">
               <span class="w-78">
-                <a v-if="music1" href="#" @click="switchBtn1"><img class="modal__btn__bgm" src="../../public/images/Lobby/平台svg/btn_bgm_off.svg" alt="">
+                <a v-show="music1" href="#" @click="switchBtn1"><img class="modal__btn__bgm" src="../../public/images/Lobby/平台svg/btn_bgm_off.svg" alt="">
                 </a>
               </span>
-              <a v-if="music2" href="#" @click="switchBtn1"><img class="modal__btn__bgm" src="../../public/images/Lobby/平台svg/btn_bgm_on.svg" alt="">
+              <a v-show="music2" href="#" @click="switchBtn1"><img class="modal__btn__bgm" src="../../public/images/Lobby/平台svg/btn_bgm_on.svg" alt="">
               </a>
             </span>
           </p>
