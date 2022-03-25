@@ -120,6 +120,9 @@
   .menu {
     background-image: url('../../../public/images/Lobby/平台svg/list_leftbar.svg');
     width: 20%;
+    &__icon {
+      height: .3rem;
+    }
     &__idBg {
         height: 1rem;
         background-image: url('../../../public/images/Lobby/平台svg/lobby_player_id_bg.svg');
