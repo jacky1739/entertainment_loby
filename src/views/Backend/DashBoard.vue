@@ -124,7 +124,7 @@
         height: 1rem;
         background-image: url('../../../public/images/Lobby/平台svg/lobby_player_id_bg.svg');
         background-repeat: no-repeat;
-        background-size: 60%;
+        background-size: 80%;
         background-position: center;
         display: flex;
         justify-content: center;
@@ -132,7 +132,7 @@
     }
     &__id {
       line-height: .3rem;
-      font-size: .3rem;
+      font-size: .25rem;
       color: white;
     }
   }
