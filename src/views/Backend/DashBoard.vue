@@ -72,6 +72,7 @@
                   <th>會員輸贏</th>
                 </tr>
               </thead>
+              <div class="content__table__tbodyBox">
                 <tbody class="content__table__tbody">
                   <tr>
                     <td>2022-03-02</td>
@@ -81,7 +82,104 @@
                     <td>100.0000</td>
                     <td>-900.0000</td>
                   </tr>
+                  <tr>
+                    <td>2022-03-02</td>
+                    <td>AK滿天星</td>
+                    <td>1234</td>
+                    <td>1000.0000</td>
+                    <td>100.0000</td>
+                    <td>-900.0000</td>
+                  </tr>
+                  <tr>
+                    <td>2022-03-02</td>
+                    <td>AK滿天星</td>
+                    <td>1234</td>
+                    <td>1000.0000</td>
+                    <td>100.0000</td>
+                    <td>-900.0000</td>
+                  </tr>
+                  <tr>
+                    <td>2022-03-02</td>
+                    <td>AK滿天星</td>
+                    <td>1234</td>
+                    <td>1000.0000</td>
+                    <td>100.0000</td>
+                    <td>-900.0000</td>
+                  </tr>
+                  <tr>
+                    <td>2022-03-02</td>
+                    <td>AK滿天星</td>
+                    <td>1234</td>
+                    <td>1000.0000</td>
+                    <td>100.0000</td>
+                    <td>-900.0000</td>
+                  </tr>
+                  <tr>
+                    <td>2022-03-02</td>
+                    <td>AK滿天星</td>
+                    <td>1234</td>
+                    <td>1000.0000</td>
+                    <td>100.0000</td>
+                    <td>-900.0000</td>
+                  </tr>
+                  <tr>
+                    <td>2022-03-02</td>
+                    <td>AK滿天星</td>
+                    <td>1234</td>
+                    <td>1000.0000</td>
+                    <td>100.0000</td>
+                    <td>-900.0000</td>
+                  </tr>
+                  <tr>
+                    <td>2022-03-02</td>
+                    <td>AK滿天星</td>
+                    <td>1234</td>
+                    <td>1000.0000</td>
+                    <td>100.0000</td>
+                    <td>-900.0000</td>
+                  </tr>
+                  <tr>
+                    <td>2022-03-02</td>
+                    <td>AK滿天星</td>
+                    <td>1234</td>
+                    <td>1000.0000</td>
+                    <td>100.0000</td>
+                    <td>-900.0000</td>
+                  </tr>
+                  <tr>
+                    <td>2022-03-02</td>
+                    <td>AK滿天星</td>
+                    <td>1234</td>
+                    <td>1000.0000</td>
+                    <td>100.0000</td>
+                    <td>-900.0000</td>
+                  </tr>
+                  <tr>
+                    <td>2022-03-02</td>
+                    <td>AK滿天星</td>
+                    <td>1234</td>
+                    <td>1000.0000</td>
+                    <td>100.0000</td>
+                    <td>-900.0000</td>
+                  </tr>
+                  <tr>
+                    <td>2022-03-02</td>
+                    <td>AK滿天星</td>
+                    <td>1234</td>
+                    <td>1000.0000</td>
+                    <td>100.0000</td>
+                    <td>-900.0000</td>
+                  </tr>
+                  <tr>
+                    <td>2022-03-02</td>
+                    <td>AK滿天星</td>
+                    <td>1234</td>
+                    <td>1000.0000</td>
+                    <td>100.0000</td>
+                    <td>-900.0000</td>
+                  </tr>
                 </tbody>
+              </div>
             </table>
           </li>
           <li class="d-flex justify-content-space-between total">
@@ -152,13 +250,18 @@
   &__table {
     border: 2px solid #856E8F;
     width: 100%;
+    height: calc(100vh - 4rem);
     border-radius: 10px;
+    display: block;
+    overflow: scroll;
     &__thead {
       tr {
           background: #533963;
+          width: 100%;
         th {
           color: #FFE08B;
-          width: calc(100% / 6);
+          // width: 100%;
+          width: 10rem;
           text-align: center;
           padding: .15rem .2rem;
           font-size: .25rem;
@@ -167,6 +270,9 @@
           font-weight: lighter;
         }
       }
+    }
+    &content__table__tbodyBox {
+      overflow-x: scroll;
     }
     &__tbody {
       tr {
