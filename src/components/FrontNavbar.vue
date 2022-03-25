@@ -22,12 +22,12 @@
     </ul>
     <ul class="social">
         <li class="social__link">
-            <a href="#" @click="click">
+            <a href="#">
                 <img class="social__image" src="../../public/images/Lobby/平台svg/btn_line_normal.svg" alt="">
             </a>
         </li>
         <li class="social__link">
-            <a href="#" @click="click">
+            <a href="#">
                 <img class="social__image" src="../../public/images/Lobby/平台svg/btn_personal_center_normal.svg" alt="">
             </a>
         </li>
@@ -151,10 +151,10 @@
         }
       }
   }
-//   .social__setting:hover {
-//     transition: all .3s;
-//     transform: scale(1.12);
-//   }
+  .social__setting__icon:hover {
+    transition: all .3s;
+    transform: scale(1.12);
+  }
 
   .popUp {
     border: 2px solid black;
