@@ -33,7 +33,7 @@
             </div>
             <div>
               <a href="#">
-                <img src="../../../public/images/Lobby/平台svg/list_betdetail1_normal.svg" alt="">
+                <img src="../../../public/images/Lobby/平台svg/list_search.svg" alt="">
               </a>
             </div>
           </li>
@@ -41,7 +41,6 @@
             <p class="search__group__text">查詢時間</p>
             <Datepicker class="datePicker" v-model="picked"></Datepicker>
             <p class="search__group__text">~</p>
-            <input type="text">
             <Datepicker class="datePicker" v-model="picked"></Datepicker>
             <select name="date" id="date_select">
               <option value="本日">本日</option>
@@ -302,7 +301,7 @@
 }
 
 .datepicker {
-  input-security {
+  .input-security {
     width: 2rem;
     height: .5rem;
   }
