@@ -39,9 +39,10 @@
           </li>
           <li class="search__group">
             <p class="search__group__text">查詢時間</p>
-            <input type="text">
+            <Datepicker class="datePicker" v-model="picked"></Datepicker>
             <p class="search__group__text">~</p>
             <input type="text">
+            <Datepicker class="datePicker" v-model="picked"></Datepicker>
             <select name="date" id="date_select">
               <option value="本日">本日</option>
               <option value="昨日">昨日</option>
@@ -260,7 +261,6 @@
           width: 100%;
         th {
           color: #FFE08B;
-          // width: 100%;
           width: 10rem;
           text-align: center;
           padding: .15rem .2rem;
@@ -296,16 +296,27 @@
   }
 }
 .total {
-    p {
-        font-size: .2rem;
-    }
+  p {
+      font-size: .2rem;
+  }
+}
+
+.datepicker {
+  input-security {
+    width: 2rem;
+    height: .5rem;
+  }
 }
 </style>
 
 <script>
+import Datepicker from 'vue3-datepicker'
+
 export default {
+  components: { Datepicker },
   data () {
     return {
+      picked: new Date(),
       dateSelect: [
         {
           title: '本日',
