@@ -39,9 +39,25 @@
           </li>
           <li class="search__group">
             <p class="search__group__text">查詢時間</p>
-            <Datepicker class="datePicker" v-model="picked"></Datepicker>
+            <Datepicker v-model="picked" style="width: 200px;
+              line-height: 0.4rem;
+              text-align: center;
+              background: black;
+              color: white;
+              font-size: .2rem;
+              border-radius: 7px;
+              border: 1px solid #856E8F;">
+            </Datepicker>
             <p class="search__group__text">~</p>
-            <Datepicker class="datePicker" v-model="picked"></Datepicker>
+            <Datepicker v-model="picked" style="width: 200px;
+              line-height: 0.4rem;
+              text-align: center;
+              background: black;
+              color: white;
+              font-size: .2rem;
+              border-radius: 7px;
+              border: 1px solid #856E8F;">
+            </Datepicker>
             <select name="date" id="date_select">
               <option value="本日">本日</option>
               <option value="昨日">昨日</option>
@@ -203,7 +219,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 .3rem;
+  padding: 0 .8rem 0 .3rem;
   .logo {
     height: .5rem;
     width: auto;
