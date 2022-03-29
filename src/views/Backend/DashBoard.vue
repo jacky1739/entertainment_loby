@@ -38,36 +38,40 @@
             </div>
           </li>
           <li class="search__group">
-            <p class="search__group__text">查詢時間</p>
-            <Datepicker v-model="picked" style="width: 200px;
-              line-height: 0.4rem;
-              text-align: center;
-              background: black;
-              color: white;
-              font-size: .2rem;
-              border-radius: 7px;
-              border: 1px solid #856E8F;">
-            </Datepicker>
-            <p class="search__group__text">~</p>
-            <Datepicker v-model="picked" style="width: 200px;
-              line-height: 0.4rem;
-              text-align: center;
-              background: black;
-              color: white;
-              font-size: .2rem;
-              border-radius: 7px;
-              border: 1px solid #856E8F;">
-            </Datepicker>
-            <select name="date" id="date_select">
-              <option value="本日">本日</option>
-              <option value="昨日">昨日</option>
-              <option value="本週">本週</option>
-              <option value="上週">上週</option>
-              <option value="本月">本月</option>
-              <option value="上月">上月</option>
-            </select>
+            <div class="d-flex">
+              <p class="search__group__text">查詢時間:</p>
+              <Datepicker v-model="picked" style="width: 2.5rem;
+                line-height: 0.4rem;
+                text-align: center;
+                background: black;
+                color: white;
+                font-size: .2rem;
+                border-radius: 7px;
+                border: 1px solid #856E8F;
+                cursor: pointer;">
+              </Datepicker>
+              <p class="search__group__text">~</p>
+              <Datepicker v-model="picked" style="width: 2.5rem;
+                line-height: 0.4rem;
+                text-align: center;
+                background: black;
+                color: white;
+                font-size: .2rem;
+                border-radius: 7px;
+                border: 1px solid #856E8F;
+                cursor: pointer">
+              </Datepicker>
+              <select class="search__group__select" name="date" id="date_select">
+                <option value="本日">本日</option>
+                <option value="昨日">昨日</option>
+                <option value="本週">本週</option>
+                <option value="上週">上週</option>
+                <option value="本月">本月</option>
+                <option value="上月">上月</option>
+              </select>
+            </div>
             <label class="search__group__text" for="game_select">遊戲類型</label>
-            <select name="games" id="game_select">
+            <select class="search__group__select" name="games" id="game_select">
               <option value="">全部</option>
               <option value="5PK">5PK</option>
               <option value="7PK">7PK</option>
@@ -309,18 +313,25 @@
     line-height: .4rem;
     font-size: .3rem;
   }
+  &__select {
+    width: 200px;
+    line-height: 0.4rem;
+    text-align: center;
+    background: black;
+    color: white;
+    font-size: 0.2rem;
+    border-radius: 7px;
+    border: 1px solid rgb(133, 110, 143);
+    cursor: pointer;
+  }
 }
 .total {
   p {
       font-size: .2rem;
   }
 }
-
-.datepicker {
-  .input-security {
-    width: 2rem;
-    height: .5rem;
-  }
+.backBtn:hover {
+  filter: brightness(1.2);
 }
 </style>
 

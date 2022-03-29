@@ -68,10 +68,6 @@
     }
   }
   &__input {
-    // background-image: url('../../../public/images/Lobby/平台svg/loginpage_account.svg');
-    // background-position: center 68%;
-    // background-repeat: no-repeat;
-    // background-size: contain;
     background-color: rgba(0, 0, 0, .61);
     border-radius: 15px;
     display: flex;
@@ -120,6 +116,10 @@
     margin: 0 auto;
     width: 1rem;
   }
+}
+
+.login__btn:hover {
+  filter: brightness(1.2);
 }
 </style>
 
