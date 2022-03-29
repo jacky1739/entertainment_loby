@@ -103,7 +103,7 @@ export default {
   name: 'ModalItem',
   data () {
     return {
-      isShow: true,
+      isShow: false,
       music1: false,
       music2: true
     }

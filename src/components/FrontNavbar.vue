@@ -1,50 +1,50 @@
 <template>
   <nav class="nav">
     <ul class="user">
-        <li class="user__img">
-            <img src="../../public/images/Lobby/平台svg/Lobby_Avatar_F01.svg" alt="">
-        </li>
-        <li class="user__id">
-            <p class="user__id__number">ID12345678</p>
-            <div class="user__linner">
-                <img src="../../public/images/Lobby/平台svg/lobby_linner.svg" alt="">
-            </div>
-            <div class="user__id__bg">
-                <span class="user__id__icon">
-                    <img src="../../public/images/Lobby/平台svg/lobby_player_id_icon.svg" alt="">
-                </span>
-                <p class="user__id__number__id">ID12345678</p>
-            </div>
-        </li>
-        <li class="user__money">
-            <p class="user__money__id">123,456,789.00</p>
-        </li>
+      <li class="user__img">
+        <img src="../../public/images/Lobby/平台svg/Lobby_Avatar_F01.svg" alt="">
+      </li>
+      <li class="user__id">
+        <p class="user__id__number">ID12345678</p>
+        <div class="user__linner">
+          <img src="../../public/images/Lobby/平台svg/lobby_linner.svg" alt="">
+        </div>
+        <div class="user__id__bg">
+          <span class="user__id__icon">
+            <img src="../../public/images/Lobby/平台svg/lobby_player_id_icon.svg" alt="">
+          </span>
+          <p class="user__id__number__id">ID12345678</p>
+        </div>
+      </li>
+      <li class="user__money">
+        <p class="user__money__id">123,456,789.00</p>
+      </li>
     </ul>
     <ul class="social">
-        <li class="social__link">
-            <a href="#">
-                <img class="social__image" src="../../public/images/Lobby/平台svg/btn_line_normal.svg" alt="">
-            </a>
-        </li>
-        <li class="social__link">
-            <a href="#">
-                <img class="social__image" src="../../public/images/Lobby/平台svg/btn_personal_center_normal.svg" alt="">
-            </a>
-        </li>
-        <li class="social__setting" ref="setting">
-            <img class="social__setting__bg" src="../../public/images/Lobby/平台svg/info_bg.svg" alt="">
-            <a href="#" @click="click">
-                <img class="social__setting__icon" src="../../public/images/Lobby/平台svg/lobby_btn_info_normal.svg" alt="">
-            </a>
-        </li>
+      <li class="social__link">
+        <a href="#">
+          <img class="social__image" src="../../public/images/Lobby/平台svg/btn_line_normal.svg" alt="">
+        </a>
+      </li>
+      <li class="social__link">
+        <a href="#">
+          <img class="social__image" src="../../public/images/Lobby/平台svg/btn_personal_center_normal.svg" alt="">
+        </a>
+      </li>
+      <li class="social__setting" ref="setting">
+        <img class="social__setting__bg" src="../../public/images/Lobby/平台svg/info_bg.svg" alt="">
+          <a href="#" @click="click">
+          <img class="social__setting__icon" src="../../public/images/Lobby/平台svg/lobby_btn_info_normal.svg" alt="">
+        </a>
+      </li>
     </ul>
     <ul class="popUp" v-show="isShow">
-        <li>
-            <a href="#"><img src="../../public/images/Lobby/平台svg/btn_bgm_normal.svg" alt=""></a>
-        </li>
-        <li>
-            <a href="#"><img src="../../public/images/Lobby/平台svg/btn_exit_normal.svg" alt=""></a>
-        </li>
+      <li>
+        <a href="#"><img src="../../public/images/Lobby/平台svg/btn_bgm_normal.svg" alt=""></a>
+      </li>
+      <li>
+        <a href="#"><img src="../../public/images/Lobby/平台svg/btn_exit_normal.svg" alt=""></a>
+      </li>
     </ul>
   </nav>
 </template>
@@ -128,14 +128,12 @@
       width: 100%;
       height: .9rem;
       margin-left: .2rem;
-        //   z-index: 3;
     }
     &__setting {
       margin: 0 .15rem 0 .7rem;
       width: 100%;
       height: .65rem;
       position: relative;
-        //   z-index: 2;
       border: 1px solid black;
       &__bg {
         position: absolute;
@@ -147,7 +145,6 @@
       }
       &__icon {
         position: absolute;
-            // z-index: 2;
       }
     }
   }
