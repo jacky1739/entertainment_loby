@@ -51,7 +51,7 @@
   }
   &__subtitle {
     margin: 0 auto;
-    margin-bottom: .3rem;
+    margin-bottom: .4rem;
     display: flex;
     &__word {
       text-align: center;
@@ -78,7 +78,7 @@
     justify-content: center;
     align-items: center;
     width: 2.8rem;
-    height: .65rem;
+    height: .55rem;
     margin: 0 auto;
     margin-bottom: .2rem;
     &__content {

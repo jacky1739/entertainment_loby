@@ -2,7 +2,7 @@
   <nav class="nav">
     <ul class="user">
       <li class="user__img">
-        <img src="../../public/images/Lobby/平台svg/Lobby_Avatar_F01.svg" alt="">
+        <img class="test" src="../../public/images/Lobby/平台svg/Lobby_Avatar_F01.svg" alt="">
       </li>
       <li class="user__id">
         <p class="user__id__number">ID12345678</p>
@@ -20,7 +20,7 @@
         <p class="user__money__id">123,456,789.00</p>
       </li>
     </ul>
-    <ul class="social">
+    <!-- <ul class="social">
       <li class="social__link">
         <a href="#">
           <img class="social__image" src="../../public/images/Lobby/平台svg/btn_line_normal.svg" alt="">
@@ -37,12 +37,23 @@
           <img class="social__setting__icon" src="../../public/images/Lobby/平台svg/lobby_btn_info_normal.svg" alt="">
         </a>
       </li>
+    </ul> -->
+    <ul class="social">
+      <li class="social__link">
+        <a class="social__link__line" href=""></a>
+      </li>
+      <li class="social__link">
+        <a class="social__link__info" href=""></a>
+      </li>
+      <li class="social__link__bg">
+        <a @click.prevent="click" class="social__link__setting" href=""></a>
+      </li>
     </ul>
     <ul class="popUp" v-show="isShow">
-      <li>
+      <li class="popUp__music">
         <a href="#"><img src="../../public/images/Lobby/平台svg/btn_bgm_normal.svg" alt=""></a>
       </li>
-      <li>
+      <li class="popUp__quit">
         <a href="#"><img src="../../public/images/Lobby/平台svg/btn_exit_normal.svg" alt=""></a>
       </li>
     </ul>
@@ -53,8 +64,11 @@
 @import '../style/mixin';
   .nav {
     background-image: url('../../public/images/Lobby/平台svg/lobby_top_bar.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
     height: .75rem;
-    @include bgImg;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -116,45 +130,87 @@
         }
     }
   }
+  // .social {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   align-items: center;
+  //   position: relative;
+  //   right: 0;
+  //   top: 0;
+  //   overflow: hidden;
+  //   &__link {
+  //     width: 100%;
+  //     height: .9rem;
+  //     margin-left: .2rem;
+  //   }
+  //   &__setting {
+  //     margin: 0 .15rem 0 .7rem;
+  //     width: 100%;
+  //     height: .65rem;
+  //     position: relative;
+  //     border: 1px solid black;
+  //     &__bg {
+  //       position: absolute;
+  //       transform: scale(3.1);
+  //       float: right;
+  //       width: 100%;
+  //       top: -6px;
+  //       right: 15px;
+  //     }
+  //     &__icon {
+  //       position: absolute;
+  //     }
+  //   }
+  // }
+  // .social__link:hover {
+    // transition: all .3s;
+    // transform: scale(1.2);
+  // }
+  // .social__setting__icon:hover {
+  //   transition: all .3s;
+  //   transform: scale(1.2);
+  // }
+
   .social {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    position: relative;
-    right: 0;
-    top: 0;
-    overflow: hidden;
     &__link {
-      width: 100%;
-      height: .9rem;
       margin-left: .2rem;
-    }
-    &__setting {
-      margin: 0 .15rem 0 .7rem;
-      width: 100%;
-      height: .65rem;
-      position: relative;
-      border: 1px solid black;
+      &__line {
+        display: inline-block;
+        background-image: url('../../public/images/Lobby/平台svg/btn_line_normal.svg');
+        @include bgImg__contain;
+        width: .6rem;
+        height: .6rem;
+      }
+      &__info {
+        display: inline-block;
+        background-image: url('../../public/images/Lobby/平台svg/btn_personal_center_normal.svg');
+        @include bgImg__contain;
+        width: .6rem;
+        height: .6rem;
+      }
+      &__setting {
+        display: inline-block;
+        background-image: url('../../public/images/Lobby/平台svg/lobby_btn_info_normal.svg');
+        @include bgImg__contain;
+        width: .6rem;
+        height: .6rem;
+        position: absolute;
+        // right: .1px
+      }
       &__bg {
-        position: absolute;
-        transform: scale(3.1);
-        float: right;
-        width: 100%;
-        top: -6px;
-        right: 15px;
-      }
-      &__icon {
-        position: absolute;
+        background-image: url('../../public/images/Lobby/平台svg/info_bg.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 1.2rem;
+        height: .8rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
       }
     }
-  }
-  .social__link:hover {
-    transition: all .3s;
-    transform: scale(1.2);
-  }
-  .social__setting__icon:hover {
-    transition: all .3s;
-    transform: scale(1.2);
   }
 
   .popUp {
@@ -166,6 +222,30 @@
     right: 0;
     top: 93px;
     z-index: 3;
+  }
+
+  .popUp__music:hover {
+    filter: brightness(1.1);
+  }
+  .popUp__quit:hover {
+    filter: brightness(1.1);
+  }
+
+  .social__link__line:hover {
+    // filter: brightness(1.75);
+    background-image: url('../../public/images/Lobby/平台svg/btn_line_press.svg');
+    transition: all .2s;
+    transform: scale(1.2);
+  }
+  .social__link__info:hover {
+    // filter: brightness(1.75);
+    background-image: url('../../public/images/Lobby/平台svg/btn_personal_center_press.svg');
+    transition: all .3s;
+    transform: scale(1.2);
+  }
+  .social__link__setting:hover {
+    transition: all .3s;
+    transform: scale(1.2);
   }
 </style>
 

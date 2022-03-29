@@ -1,6 +1,11 @@
-@mixin bgImg {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
+@mixin bgImg__contain {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+@mixin bgImg__cover {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
