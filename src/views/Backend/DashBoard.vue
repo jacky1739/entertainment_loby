@@ -39,7 +39,7 @@
           </li>
           <li class="search__group">
             <div class="d-flex">
-              <p class="search__group__text">查詢時間:</p>
+              <p class="search__group__text">查詢時間：</p>
               <Datepicker v-model="picked" style="width: 2.5rem;
                 line-height: 0.4rem;
                 text-align: center;
@@ -50,7 +50,7 @@
                 border: 1px solid #856E8F;
                 cursor: pointer;">
               </Datepicker>
-              <p class="search__group__text">~</p>
+              <p class="search__group__text">～</p>
               <Datepicker v-model="picked" style="width: 2.5rem;
                 line-height: 0.4rem;
                 text-align: center;
@@ -70,7 +70,7 @@
                 <option value="上月">上月</option>
               </select>
             </div>
-            <label class="search__group__text" for="game_select">遊戲類型</label>
+            <label class="search__group__text" for="game_select">遊戲類型：</label>
             <select class="search__group__select" name="games" id="game_select">
               <option value="">全部</option>
               <option value="5PK">5PK</option>
