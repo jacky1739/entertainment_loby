@@ -6,11 +6,11 @@
       <li class="login__subtitle">
         <sapn class="login__subtitle__line"></sapn><p class="login__subtitle__word">登入</p><sapn class="login__subtitle__line"></sapn>
       </li>
-      <li class="login__input">
-        <input class="login__input__content" type="text">
+      <li class="login__input mb-2">
+        <input class="login__input__content" type="text" placeholder="帳號">
       </li>
       <li class="login__input">
-        <input class="login__input__content" type="text">
+        <input class="login__input__content" type="text" placeholder="密碼">
       </li>
       <li class="login__errorMessage">
         <p class="login__errorMessage__word" v-show="showError">
@@ -18,7 +18,7 @@
         </p>
       </li>
       <li class="login__btn" >
-        <a href="/login" class="login__btn__submit" @click="onClick">
+        <a href="#" class="login__btn__submit" @click="onClick">
           <img src="../../../public/images/Lobby/平台svg/btn_login_normal.svg" alt="">
         </a>
       </li>
@@ -68,16 +68,19 @@
     }
   }
   &__input {
-    background-image: url('../../../public/images/Lobby/平台svg/loginpage_account.svg');
-    background-position: center 68%;
-    background-repeat: no-repeat;
-    background-size: contain;
+    // background-image: url('../../../public/images/Lobby/平台svg/loginpage_account.svg');
+    // background-position: center 68%;
+    // background-repeat: no-repeat;
+    // background-size: contain;
+    background-color: rgba(0, 0, 0, .61);
+    border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 2.6rem;
+    width: 2.8rem;
     height: .65rem;
     margin: 0 auto;
+    margin-bottom: .2rem;
     &__content {
       width: 100%;
       line-height: .35rem;
@@ -87,12 +90,14 @@
       outline: none;
       padding: 0 .1rem;
       color: white;
+      text-align: center;
+      font-size: .2rem;
     }
   }
   &__errorMessage {
     text-align: center;
     width: 1.4rem;
-    height: .25rem;
+    height: .15rem;
     margin: 0 auto;
     margin-bottom: .4rem;
     &__word {
