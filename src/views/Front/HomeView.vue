@@ -23,6 +23,7 @@
   height: calc(100vh - 1.3rem);
   display: flex;
   align-items: center;
+  overflow: scroll;
 }
 .routerView {
   background: black;

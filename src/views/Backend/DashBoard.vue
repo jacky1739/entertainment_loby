@@ -14,10 +14,10 @@
             <li class="menu__idBg">
                 <span><img class="menu__icon" src="../../../public/images/Lobby/平台svg/lobby_player_id_icon.svg" alt=""></span><p class="menu__id">ID12345678</p>
             </li>
-            <li>
+            <li class="menu__betSearch">
                 <a href="#"><img src="../../../public/images/Lobby/平台svg/list_searchbet_normal.svg" alt=""></a>
             </li>
-            <li>
+            <li class="menu__accountList">
                 <a href="#"><img src="../../../public/images/Lobby/平台svg/list_accountdetail_normal.svg" alt=""></a>
             </li>
         </ul>
@@ -48,7 +48,8 @@
                 font-size: .2rem;
                 border-radius: 7px;
                 border: 1px solid #856E8F;
-                cursor: pointer;">
+                cursor: pointer;"
+                :style="datePicker">
               </Datepicker>
               <p class="search__group__text">～</p>
               <Datepicker v-model="picked" style="width: 2.5rem;
@@ -59,7 +60,8 @@
                 font-size: .2rem;
                 border-radius: 7px;
                 border: 1px solid #856E8F;
-                cursor: pointer">
+                cursor: pointer;"
+                :style="datePicker">
               </Datepicker>
               <select class="search__group__select" name="date" id="date_select">
                 <option value="本日">本日</option>
@@ -327,8 +329,14 @@
 }
 .total {
   p {
-      font-size: .2rem;
+    font-size: .2rem !important;
   }
+}
+.menu__betSearch:hover {
+  filter: brightness(1.3);
+}
+.menu__accountList:hover {
+  filter: brightness(1.3);
 }
 .backBtn:hover {
   filter: brightness(1.2);
@@ -343,16 +351,26 @@ export default {
   data () {
     return {
       picked: new Date(),
-      dateSelect: [
-        {
-          title: '本日',
-          value: '本日'
-        },
-        {
-          title: '昨日',
-          vale: '昨日'
-        }
-      ]
+      datePicker: {
+        '--width': '21.5em',
+        '--vdp-bg-color': '#ffffff',
+        '--vdp-text-color': '#000000',
+        '--vdp-box-shadow': '0 4px 10px 0 rgba(128, 144, 160, 0.1), 0 0 1px 0 rgba(128, 144, 160, 0.81)',
+        '--vdp-border-radius': '3px',
+        '--vdp-heading-size': '2.5em',
+        '--vdp-heading-weight': 'bold',
+        '--vdp-heading-hover-color': '#eeeeee',
+        '--vdp-arrow-color': 'currentColor',
+        '--vdp-elem-color': 'currentColor',
+        '--vdp-disabled-color': '#d5d9e0',
+        '--vdp-hover-color': '#ffffff',
+        '--vdp-hover-bg-color': '#0baf74',
+        '--vdp-selected-color': '#ffffff',
+        '--vdp-selected-bg-color': '#0baf74',
+        '--vdp-elem-font-size': '0.8em',
+        '--vdp-elem-border-radius': '3px',
+        '--vdp-divider-color': '#d5d9e0'
+      }
     }
   }
 }

@@ -222,14 +222,6 @@
     top: 93px;
     z-index: 3;
   }
-
-  .popUp__music:hover {
-    filter: brightness(1.2);
-  }
-  .popUp__quit:hover {
-    filter: brightness(1.2);
-  }
-
   .social__link__line:hover {
     // filter: brightness(1.75);
     background-image: url('../../public/images/Lobby/平台svg/btn_line_press.svg');
@@ -245,6 +237,13 @@
   .social__link__setting:hover {
     transition: all .3s;
     transform: scale(1.2);
+    filter: brightness(1.2);
+  }
+  .popUp__music:hover {
+    filter: brightness(1.2);
+  }
+  .popUp__quit:hover {
+    filter: brightness(1.2);
   }
 </style>
 
