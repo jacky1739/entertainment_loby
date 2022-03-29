@@ -96,6 +96,10 @@
   background: #323033;
   border-radius: 15px;
 }
+
+.modal__cancel:hover {
+  filter: brightness(1.55);
+}
 </style>
 
 <script>
@@ -103,7 +107,7 @@ export default {
   name: 'ModalItem',
   data () {
     return {
-      isShow: false,
+      isShow: true,
       music1: false,
       music2: true
     }

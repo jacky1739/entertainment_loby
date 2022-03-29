@@ -264,7 +264,7 @@
     margin-bottom: .3rem;
   }
   &__table {
-    border: 2px solid #856E8F;
+    border: 1px solid #856E8F;
     width: 100%;
     height: calc(100vh - 4rem);
     border-radius: 10px;
@@ -281,7 +281,7 @@
           padding: .15rem .2rem;
           font-size: .25rem;
           border-bottom: 2px solid #856E8F;
-          border-right: 2px solid #856E8F;
+          // border-right: 2px solid #856E8F;
           font-weight: lighter;
         }
       }

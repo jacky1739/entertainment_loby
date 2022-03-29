@@ -198,7 +198,6 @@
         width: .6rem;
         height: .6rem;
         position: absolute;
-        // right: .1px
       }
       &__bg {
         background-image: url('../../public/images/Lobby/平台svg/info_bg.svg');
@@ -225,10 +224,10 @@
   }
 
   .popUp__music:hover {
-    filter: brightness(1.1);
+    filter: brightness(1.2);
   }
   .popUp__quit:hover {
-    filter: brightness(1.1);
+    filter: brightness(1.2);
   }
 
   .social__link__line:hover {
