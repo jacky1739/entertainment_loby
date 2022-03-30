@@ -24,14 +24,18 @@
         <ul class="content">
           <li class="content__btn__group">
             <div class="d-flex">
-              <a class="mr-2" href="#">
-                <img src="../../../public/images/Lobby/平台svg/list_betdetail1_normal.svg" alt="">
-              </a>
-              <a href="#">
-                <img src="../../../public/images/Lobby/平台svg/list_betdetail2_normal.svg" alt="">
-              </a>
+              <div class="content__betList1btn mr-2">
+                <a href="#">
+                  <img src="../../../public/images/Lobby/平台svg/list_betdetail1_normal.svg" alt="">
+                </a>
+              </div>
+              <div class="content__betList2btn">
+                <a href="#">
+                  <img src="../../../public/images/Lobby/平台svg/list_betdetail2_normal.svg" alt="">
+                </a>
+              </div>
             </div>
-            <div>
+            <div class="content__searchbtn">
               <a href="#">
                 <img src="../../../public/images/Lobby/平台svg/list_search.svg" alt="">
               </a>
@@ -340,6 +344,15 @@
   filter: brightness(1.3);
 }
 .backBtn:hover {
+  filter: brightness(1.2);
+}
+.content__betList1btn:hover {
+  filter: brightness(1.2);
+}
+.content__betList2btn:hover {
+  filter: brightness(1.2);
+}
+.content__searchbtn:hover {
   filter: brightness(1.2);
 }
 </style>
