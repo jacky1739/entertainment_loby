@@ -1,11 +1,11 @@
 <template>
-  <Loading :loading="loading"></Loading>
+  <Loading-item :Loading="isLoading"></Loading-item>
   <main class="wrapper">
     <ul class="login">
       <li class="login__img">
       </li>
       <li class="login__subtitle">
-        <sapn class="login__subtitle__line"></sapn><p class="login__subtitle__word">登入</p><sapn class="login__subtitle__line"></sapn>
+        <span class="login__subtitle__line"></span><p class="login__subtitle__word">登入</p><span class="login__subtitle__line"></span>
       </li>
       <li class="login__input mb-2">
         <input class="login__input__content" type="text" placeholder="帳號">
@@ -19,7 +19,7 @@
         </p>
       </li>
       <li class="login__btn" >
-        <a href="#" class="login__btn__submit" @click="onClick">
+        <a href="#" class="login__btn__submit" @click.prevent="onClick">
           <img src="../../../public/images/Lobby/平台svg/btn_login_normal.svg" alt="">
         </a>
       </li>
@@ -125,19 +125,17 @@
 </style>
 
 <script>
-import Loading from '../../components/LoadingItem.vue'
-
 export default {
   data () {
     return {
-      isLoading: true,
+      isLoading: false,
       showError: false
     }
   },
-  components: { Loading },
   methods: {
     onClick () {
       console.log('click')
+      this.isLoading = !this.isLoading
     }
   }
 }

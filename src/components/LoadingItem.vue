@@ -1,6 +1,6 @@
 <template>
-  <div class="loading">
-    <img src="../../public/images/Lobby/lobby_loading.gif" alt="loading">
+  <div class="loading" v-if="loading">
+    <img src="../../public/images/Lobby/giphy.gif" alt="loading">
   </div>
 </template>
 
@@ -12,9 +12,8 @@
     right: 0;
     margin: auto;
     transform: translateY(-50%);
-    width: 1rem;
-    height: 1rem;
-    // background: #000;
+    width: 1.5rem;
+    height: 1.5rem;
   }
 </style>
 
@@ -22,13 +21,14 @@
 export default {
   data () {
     return {
-      loading: true
+      loading: false
     }
   },
-  props: ['isLoading'],
+  props: ['Loading'],
   watch: {
-    isLoading () {
-      this.loading = !this.loading
+    Loading (n, o) {
+      console.log(n, o)
+      this.loading = this.Loading
     }
   }
 }
