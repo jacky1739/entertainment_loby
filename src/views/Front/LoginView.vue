@@ -5,7 +5,7 @@
       <li class="login__img">
       </li>
       <li class="login__subtitle">
-        <span class="login__subtitle__line"></span><p class="login__subtitle__word">登入</p><span class="login__subtitle__line"></span>
+        <span class="login__subtitle__line"></span><p class="login__subtitle__text">登入</p><span class="login__subtitle__line"></span>
       </li>
       <li class="login__input mb-2">
         <input class="login__input__content" type="text" placeholder="帳號">
@@ -45,8 +45,8 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-    width: 3.5rem;
-    height: 2.5rem;
+    width: 4.5rem;
+    height: 3.5rem;
     margin: 0 auto;
     margin-bottom: .2rem;
   }
@@ -54,9 +54,9 @@
     margin: 0 auto;
     margin-bottom: .4rem;
     display: flex;
-    &__word {
+    &__text {
       text-align: center;
-      font-size: .2rem;
+      font-size: .25rem;
       color: white;
     }
     &__line {
