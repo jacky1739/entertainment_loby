@@ -38,7 +38,7 @@
   display: flex;
   height: 90%;
   &__item {
-    width: 5.5rem;
+    width: 5.5rem;  //build 需要 4.5rem
     height: 50%;
     margin: 0 .2rem 1rem 0;
   }
