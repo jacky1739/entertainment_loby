@@ -1,4 +1,5 @@
 <template>
+  <Loading :loading="loading"></Loading>
   <main class="wrapper">
     <ul class="login">
       <li class="login__img">
@@ -124,12 +125,16 @@
 </style>
 
 <script>
+import Loading from '../../components/LoadingItem.vue'
+
 export default {
   data () {
     return {
+      isLoading: true,
       showError: false
     }
   },
+  components: { Loading },
   methods: {
     onClick () {
       console.log('click')
