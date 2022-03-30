@@ -38,9 +38,9 @@
             </div>
           </li>
           <li class="search__group">
-            <div class="d-flex">
-              <p class="search__group__text">查詢時間：</p>
-              <Datepicker v-model="picked" style="width: 2.5rem;
+            <p class="search__group__text">查詢時間：</p>
+            <div class="d-flex w-45p justify-content-space-between align-items-center">
+              <Datepicker v-model="picked" style="max-width: 2.5rem;
                 line-height: 0.4rem;
                 text-align: center;
                 background: black;
@@ -52,7 +52,7 @@
                 :style="datePicker">
               </Datepicker>
               <p class="search__group__text">～</p>
-              <Datepicker v-model="picked" style="width: 2.5rem;
+              <Datepicker v-model="picked" style="max-width: 2.5rem;
                 line-height: 0.4rem;
                 text-align: center;
                 background: black;
@@ -317,6 +317,7 @@
   }
   &__select {
     width: 200px;
+    height: .4rem;
     line-height: 0.4rem;
     text-align: center;
     background: black;
