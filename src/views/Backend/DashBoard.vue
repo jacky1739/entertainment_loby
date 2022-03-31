@@ -384,6 +384,7 @@ export default {
         '--vdp-elem-font-size': '0.8em',
         '--vdp-elem-border-radius': '3px',
         '--vdp-divider-color': '#d5d9e0'
+        // https://icehaunter.github.io/vue3-datepicker/config.html#styling-example-and-playground
       }
     }
   }
