@@ -291,7 +291,7 @@
           width: 10rem;
           text-align: center;
           padding: .15rem .2rem;
-          font-size: calc(.1rem + .5vh);
+          font-size: calc(.01rem + 2vh);
           border-bottom: 2px solid #856E8F;
           // border-right: 2px solid #856E8F;
           font-weight: lighter;
@@ -306,7 +306,7 @@
         td {
           text-align: center;
           padding: .2rem;
-          font-size: calc(.1rem + .5vh);
+          font-size: calc(.01rem + 2vh);
         }
       }
     }
