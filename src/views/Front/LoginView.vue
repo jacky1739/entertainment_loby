@@ -125,20 +125,6 @@
 .login__btn:hover {
   filter: brightness(1.2);
 }
-
-.box {
-  width: 30%;
-  height: auto;
-  border: 1px solid black;
-  flex-direction: column;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  li {
-    position: relative;
-  }
-}
 </style>
 
 <script>
