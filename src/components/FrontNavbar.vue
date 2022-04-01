@@ -20,24 +20,6 @@
         <p class="user__money__id">123,456,789.00</p>
       </li>
     </ul>
-    <!-- <ul class="social">
-      <li class="social__link">
-        <a href="#">
-          <img class="social__image" src="../../public/images/Lobby/平台svg/btn_line_normal.svg" alt="">
-        </a>
-      </li>
-      <li class="social__link">
-        <a href="#">
-          <img class="social__image" src="../../public/images/Lobby/平台svg/btn_personal_center_normal.svg" alt="">
-        </a>
-      </li>
-      <li class="social__setting" ref="setting">
-        <img class="social__setting__bg" src="../../public/images/Lobby/平台svg/info_bg.svg" alt="">
-          <a href="#" @click="click">
-          <img class="social__setting__icon" src="../../public/images/Lobby/平台svg/lobby_btn_info_normal.svg" alt="">
-        </a>
-      </li>
-    </ul> -->
     <ul class="social">
       <li class="social__link">
         <a class="social__link__line" href=""></a>
@@ -130,46 +112,6 @@
         }
     }
   }
-  // .social {
-  //   display: flex;
-  //   justify-content: space-between;
-  //   align-items: center;
-  //   position: relative;
-  //   right: 0;
-  //   top: 0;
-  //   overflow: hidden;
-  //   &__link {
-  //     width: 100%;
-  //     height: .9rem;
-  //     margin-left: .2rem;
-  //   }
-  //   &__setting {
-  //     margin: 0 .15rem 0 .7rem;
-  //     width: 100%;
-  //     height: .65rem;
-  //     position: relative;
-  //     border: 1px solid black;
-  //     &__bg {
-  //       position: absolute;
-  //       transform: scale(3.1);
-  //       float: right;
-  //       width: 100%;
-  //       top: -6px;
-  //       right: 15px;
-  //     }
-  //     &__icon {
-  //       position: absolute;
-  //     }
-  //   }
-  // }
-  // .social__link:hover {
-    // transition: all .3s;
-    // transform: scale(1.2);
-  // }
-  // .social__setting__icon:hover {
-  //   transition: all .3s;
-  //   transform: scale(1.2);
-  // }
 
   .social {
     display: flex;
