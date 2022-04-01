@@ -3,7 +3,7 @@
   <main class="wrapper">
     <ul class="login">
       <li class="login__img">
-        <img src="../../../public/images/Lobby/平台svg/lobby_logo.svg" alt="lobby_logo">
+        <a href=""><img src="../../../public/images/Lobby/平台svg/lobby_logo.svg" alt="lobby_logo"></a>
       </li>
       <li class="login__subtitle">
         <span class="login__subtitle__line"></span><p class="login__subtitle__text">登入</p><span class="login__subtitle__line"></span>
@@ -41,21 +41,29 @@
   align-items: center;
 }
 .login {
+  &__img {
+    @media (max-width: 992px) {
+      width: calc(.5rem + 40vw);
+    }
+  }
   &__subtitle {
     margin: 0 auto;
-    margin-bottom: .4rem;
+    margin-bottom: .2rem;
     display: flex;
+    justify-content: center;
     &__text {
       text-align: center;
       font-size: .25rem;
-      color: white;
+      @media (max-width: 992px) {
+        font-size: .16rem;
+      }
     }
     &__line {
       background-image: url('../../../public/images/Lobby/平台svg/lobby_loginline.svg');
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
-      width: 44.2%;
+      width: 43%;
       height: auto;
     }
   }
@@ -68,7 +76,12 @@
     width: 2.8rem;
     height: .55rem;
     margin: 0 auto;
-    margin-bottom: .2rem;
+    margin-bottom: .1rem;
+    @media (max-width: 992px) {
+      width: 2rem;
+      height: .35rem;
+      border-radius: 10px;
+    }
     &__content {
       width: 100%;
       line-height: .35rem;
@@ -87,7 +100,7 @@
     width: 1.4rem;
     height: .15rem;
     margin: 0 auto;
-    margin-bottom: .4rem;
+    margin-bottom: .15rem;
     &__word {
       width: 1.4rem;
       height: .25rem;
