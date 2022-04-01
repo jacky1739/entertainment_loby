@@ -3,7 +3,7 @@
   <main class="wrapper">
     <ul class="login">
       <li class="login__img">
-        <a href=""><img src="../../../public/images/Lobby/平台svg/lobby_logo.svg" alt="lobby_logo"></a>
+        <img src="../../../public/images/Lobby/平台svg/lobby_logo.svg" alt="lobby_logo">
       </li>
       <li class="login__subtitle">
         <span class="login__subtitle__line"></span><p class="login__subtitle__text">登入</p><span class="login__subtitle__line"></span>
