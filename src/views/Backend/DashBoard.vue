@@ -43,9 +43,10 @@
           </li>
           <li class="search__group">
             <p class="search__group__text">查詢時間：</p>
-            <div class="d-flex w-45p justify-content-space-between align-items-center">
-              <Datepicker v-model="picked" style="max-width: 2.5rem;
-                line-height: 0.4rem;
+            <div class="d-flex justify-content-space-between align-items-center">
+              <Datepicker v-model="picked" style="
+                width: calc(1rem + 5vh);
+                line-height: .4rem;
                 text-align: center;
                 background: black;
                 color: white;
@@ -53,11 +54,12 @@
                 border-radius: 7px;
                 border: 1px solid #856E8F;
                 cursor: pointer;"
-                :style="datePicker">
+                >
               </Datepicker>
               <p class="search__group__text">～</p>
-              <Datepicker v-model="picked" style="max-width: 2.5rem;
-                line-height: 0.4rem;
+              <Datepicker v-model="picked" style="
+                width: calc(1rem + 5vh);
+                line-height: .4rem;
                 text-align: center;
                 background: black;
                 color: white;
@@ -65,7 +67,7 @@
                 border-radius: 7px;
                 border: 1px solid #856E8F;
                 cursor: pointer;"
-                :style="datePicker">
+                >
               </Datepicker>
               <select class="search__group__select" name="date" id="date_select">
                 <option value="本日">本日</option>
@@ -266,7 +268,7 @@
 }
 .content {
   padding: .5rem .9rem;
-  width: 100%;
+  width: 80%;
   background: #000;
   &__btn__group {
     justify-content: space-between;
@@ -282,14 +284,14 @@
     overflow: scroll;
     &__thead {
       tr {
-          background: #533963;
-          width: 100%;
+        background: #533963;
+        width: 100%;
         th {
           color: #FFE08B;
           width: 10rem;
           text-align: center;
           padding: .15rem .2rem;
-          font-size: .25rem;
+          font-size: calc(.1rem + .5vh);
           border-bottom: 2px solid #856E8F;
           // border-right: 2px solid #856E8F;
           font-weight: lighter;
@@ -304,7 +306,7 @@
         td {
           text-align: center;
           padding: .2rem;
-          font-size: .2rem;
+          font-size: calc(.1rem + .5vh);
         }
       }
     }
@@ -317,16 +319,16 @@
   margin-bottom: .3rem;
   &__text {
     line-height: .4rem;
-    font-size: .3rem;
+    font-size: calc(.1rem + 1vh);
   }
   &__select {
-    width: 200px;
+    width: calc(1rem + 5vh);
     height: .4rem;
     line-height: 0.4rem;
     text-align: center;
     background: black;
     color: white;
-    font-size: 0.2rem;
+    font-size: 0.15rem;
     border-radius: 7px;
     border: 1px solid rgb(133, 110, 143);
     cursor: pointer;
