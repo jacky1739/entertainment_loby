@@ -3,6 +3,7 @@
   <main class="wrapper">
     <ul class="login">
       <li class="login__img">
+        <img src="../../../public/images/Lobby/平台svg/lobby_logo.svg" alt="lobby_logo">
       </li>
       <li class="login__subtitle">
         <span class="login__subtitle__line"></span><p class="login__subtitle__text">登入</p><span class="login__subtitle__line"></span>
@@ -40,16 +41,6 @@
   align-items: center;
 }
 .login {
-  &__img {
-    background-image: url('../../../public/images/Lobby/平台svg/lobby_logo.svg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-    width: 4.5rem;
-    height: 3.5rem;
-    margin: 0 auto;
-    margin-bottom: .2rem;
-  }
   &__subtitle {
     margin: 0 auto;
     margin-bottom: .4rem;
