@@ -15,7 +15,7 @@
         <input class="login__input__content" type="text" placeholder="密碼">
       </li>
       <li class="login__errorMessage">
-        <p class="login__errorMessage__word" v-show="showError">
+        <p class="login__errorMessage__word" v-show="isLoading">
           <span><img class="login__errorMessage__icon" src="../../../public/images/Lobby/平台svg/loginpage_error.svg" alt=""></span>帳號密碼有誤
         </p>
       </li>
