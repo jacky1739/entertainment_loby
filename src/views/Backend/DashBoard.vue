@@ -281,7 +281,7 @@
   &__table {
     border: 1px solid #856E8F;
     width: 100%;
-    height: calc(100vh - 4rem);
+    height: calc(100vh - 3.5rem);
     border-radius: 10px;
     display: block;
     overflow-y: scroll;
@@ -339,6 +339,9 @@
     cursor: pointer;
   }
 }
+::-webkit-scrollbar {
+    display: none;
+  }
 .total__price {
   font-size: calc(.1rem + 1vh);
 }
