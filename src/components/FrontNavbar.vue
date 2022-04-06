@@ -48,7 +48,7 @@
     background-image: url('../../public/images/Lobby/平台svg/lobby_top_bar.svg');
     background-repeat: no-repeat;
     background-position: center bottom 12%;
-    // background-size: cover;
+    background-size: 200%;
     width: 100%;
     height: .75rem;
     display: flex;

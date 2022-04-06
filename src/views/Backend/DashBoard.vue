@@ -210,7 +210,7 @@
               </div>
             </table>
           </li>
-          <li class="d-flex justify-content-space-between total">
+          <li class="d-flex justify-content-space-between account">
             <p>總筆數: 1000000</p>
             <p>總下注數: 12,345,678.0000</p>
             <p>總派彩: 12,345,678.0000</p>
@@ -226,7 +226,7 @@
   background-image: url('../../../public/images/Lobby/平台svg/lobby_top_bar.svg');
   background-repeat: no-repeat;
   background-position: center bottom 12%;
-  // background-size: cover;
+  background-size: 200%;
   height: .77rem;
   display: flex;
   justify-content: space-between;
