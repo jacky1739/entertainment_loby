@@ -210,11 +210,11 @@
               </div>
             </table>
           </li>
-          <li class="d-flex justify-content-space-between account">
-            <p>總筆數: 1000000</p>
-            <p>總下注數: 12,345,678.0000</p>
-            <p>總派彩: 12,345,678.0000</p>
-            <p>會員輸贏: 1,234,567.0000</p>
+          <li class="d-flex justify-content-space-between">
+            <p class="total__price">總筆數: 1000000</p>
+            <p class="total__price">總下注數: 12,345,678.0000</p>
+            <p class="total__price">總派彩: 12,345,678.0000</p>
+            <p class="total__price">會員輸贏: 1,234,567.0000</p>
           </li>
         </ul>
     </div>
@@ -334,27 +334,13 @@
     cursor: pointer;
   }
 }
-.total {
-  p {
-    font-size: .2rem !important;
-  }
+.total__price {
+  font-size: calc(.1rem + 1vh);
 }
-.menu__betSearch:hover {
+.menu__betSearch:hover, .menu__accountList:hover {
   filter: brightness(1.3);
 }
-.menu__accountList:hover {
-  filter: brightness(1.3);
-}
-.backBtn:hover {
-  filter: brightness(1.2);
-}
-.content__betList1btn:hover {
-  filter: brightness(1.2);
-}
-.content__betList2btn:hover {
-  filter: brightness(1.2);
-}
-.content__searchbtn:hover {
+.backBtn:hover, .content__searchbtn:hover, .content__betList2btn:hover, .content__betList1btn:hover {
   filter: brightness(1.2);
 }
 </style>
