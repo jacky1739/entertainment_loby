@@ -53,8 +53,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    width: 6rem;
-    height: 4rem;
+    width: calc(5rem + 10vh);
+    height: calc(3rem + 10vh);
     padding: 0 1rem;
   }
   &__title {
