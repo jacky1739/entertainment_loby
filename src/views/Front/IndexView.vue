@@ -28,9 +28,9 @@
       <a href=""><img class="games__img" src="../../../public/images/Lobby/遊戲icon/png/新icon公版_五星宏輝.png" alt="game__icon"></a>
     </li>
   </ul>
-  <div class="next__page">
-    <a href="#"><img src="../../../public/images/Lobby/平台svg/lobby_next_page.svg" alt="next__page"></a>
-  </div>
+  <!-- <div class="next__page">
+    <a href="#" @click="scroll"><img src="../../../public/images/Lobby/平台svg/lobby_next_page.svg" alt="next__page"></a>
+  </div> -->
 </template>
 
 <style lang="scss" scoped>
@@ -53,3 +53,14 @@
 }
 
 </style>
+
+<script>
+export default {
+  methods: {
+    scroll () {
+      console.log('click')
+      window.scrollTo(1000, 0)
+    }
+  }
+}
+</script>
