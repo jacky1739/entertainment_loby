@@ -45,6 +45,7 @@
             <p class="search__group__text">查詢時間：</p>
             <div class="d-flex justify-content-space-between align-items-center">
               <Datepicker v-model="picked" style="
+                margin-right: calc(.01rem + 1.5vh);
                 width: calc(1rem + 5vh);
                 line-height: .4rem;
                 text-align: center;
@@ -52,12 +53,13 @@
                 color: white;
                 font-size: .2rem;
                 border-radius: 7px;
-                border: 1px solid #856E8F;
+                border: 1.5px solid #856E8F;
                 cursor: pointer;"
                 >
               </Datepicker>
               <p class="search__group__text">～</p>
               <Datepicker v-model="picked" style="
+                margin-right: calc(.01rem + 1.5vh);
                 width: calc(1rem + 5vh);
                 line-height: .4rem;
                 text-align: center;
@@ -65,7 +67,7 @@
                 color: white;
                 font-size: .2rem;
                 border-radius: 7px;
-                border: 1px solid #856E8F;
+                border: 1.5px solid #856E8F;
                 cursor: pointer;"
                 >
               </Datepicker>
@@ -231,7 +233,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 .8rem 0 .3rem;
+  padding: calc(.12rem + 3vh);
   .logo {
     height: .5rem;
     width: auto;
@@ -242,7 +244,7 @@
   }
 }
 .main__box {
-  height: calc(100vh - .7rem);
+  height: calc(100vh - .8rem);
   .menu {
     background-image: url('../../../public/images/Lobby/平台svg/list_leftbar.svg');
     width: 20%;
@@ -267,7 +269,8 @@
   }
 }
 .content {
-  padding: .5rem .9rem;
+  // padding: .5rem .9rem;
+  padding: calc(.2rem + 3vh);
   width: 80%;
   background: #000;
   &__btn__group {
@@ -318,11 +321,12 @@
   height: .4rem;
   margin-bottom: .3rem;
   &__text {
+    margin-right: calc(.01rem + 1.5vh);
     line-height: .4rem;
     font-size: calc(.1rem + 1vh);
   }
   &__select {
-    width: calc(1rem + 5vh);
+    width: calc(1rem + 1vh);
     height: .4rem;
     line-height: 0.4rem;
     text-align: center;
@@ -330,7 +334,7 @@
     color: white;
     font-size: 0.15rem;
     border-radius: 7px;
-    border: 1px solid rgb(133, 110, 143);
+    border: 1.5px solid rgb(133, 110, 143);
     cursor: pointer;
   }
 }
