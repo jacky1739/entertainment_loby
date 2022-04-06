@@ -244,7 +244,7 @@
   }
 }
 .main__box {
-  height: calc(100vh - .8rem);
+  height: calc(100vh - .75rem);
   .menu {
     background-image: url('../../../public/images/Lobby/平台svg/list_leftbar.svg');
     width: 20%;
