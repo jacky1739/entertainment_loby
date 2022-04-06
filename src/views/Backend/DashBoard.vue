@@ -284,7 +284,8 @@
     height: calc(100vh - 4rem);
     border-radius: 10px;
     display: block;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
     &__thead {
       tr {
         background: #533963;

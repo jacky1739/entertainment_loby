@@ -39,7 +39,6 @@
   height: 90%;
   &__item {
     height: 50%;
-    // margin: 0 .2rem 1rem 0;
   }
   &__img {
     width: fit-content;
