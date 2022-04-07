@@ -1,31 +1,35 @@
 <template>
   <ul class="games">
     <li>
-      <a href=""><img class="games__img" src="../../../public/images/Lobby/遊戲icon/png/新icon公版長_金蟬捕魚.png" alt="game__icon"></a>
+      <a href=""><img class="games__img" src="../../../public/images/Lobby/icon_v_jcf.gif" alt="game__icon"></a>
     </li>
     <li class="games__item">
-      <a href=""><img class="games__img" src="../../../public/images/Lobby/遊戲icon/png/新icon公版_龍虎鬥.png" alt="game__icon"></a>
-      <a href=""><img class="games__img" src="../../../public/images/Lobby/遊戲icon/png/新icon公版_五星宏輝.png" alt="game__icon"></a>
+      <a href=""><img class="games__img" src="../../../public/images/Lobby/icon_lhd.gif" alt="game__icon"></a>
+      <a href=""><img class="games__img" src="../../../public/images/Lobby/icon_wxh.gif" alt="game__icon"></a>
     </li>
     <li class="games__item">
-      <a href=""><img class="games__img" src="../../../public/images/Lobby/遊戲icon/png/新icon公版_龍虎鬥.png" alt="game__icon"></a>
-      <a href=""><img class="games__img" src="../../../public/images/Lobby/遊戲icon/png/新icon公版_五星宏輝.png" alt="game__icon"></a>
+      <a href=""><img class="games__img" src="../../../public/images/Lobby/icon_lhd.gif" alt="game__icon"></a>
+      <a href=""><img class="games__img" src="../../../public/images/Lobby/icon_wxh.gif" alt="game__icon"></a>
     </li>
     <li class="games__item">
-      <a href=""><img class="games__img" src="../../../public/images/Lobby/遊戲icon/png/新icon公版_龍虎鬥.png" alt="game__icon"></a>
-      <a href=""><img class="games__img" src="../../../public/images/Lobby/遊戲icon/png/新icon公版_五星宏輝.png" alt="game__icon"></a>
+      <a href=""><img class="games__img" src="../../../public/images/Lobby/icon_lhd.gif" alt="game__icon"></a>
+      <a href=""><img class="games__img" src="../../../public/images/Lobby/icon_wxh.gif" alt="game__icon"></a>
     </li>
     <li class="games__item">
-      <a href=""><img class="games__img" src="../../../public/images/Lobby/遊戲icon/png/新icon公版_龍虎鬥.png" alt="game__icon"></a>
-      <a href=""><img class="games__img" src="../../../public/images/Lobby/遊戲icon/png/新icon公版_五星宏輝.png" alt="game__icon"></a>
+      <a href=""><img class="games__img" src="../../../public/images/Lobby/icon_lhd.gif" alt="game__icon"></a>
+      <a href=""><img class="games__img" src="../../../public/images/Lobby/icon_wxh.gif" alt="game__icon"></a>
     </li>
     <li class="games__item">
-      <a href=""><img class="games__img" src="../../../public/images/Lobby/遊戲icon/png/新icon公版_龍虎鬥.png" alt="game__icon"></a>
-      <a href=""><img class="games__img" src="../../../public/images/Lobby/遊戲icon/png/新icon公版_五星宏輝.png" alt="game__icon"></a>
+      <a href=""><img class="games__img" src="../../../public/images/Lobby/icon_lhd.gif" alt="game__icon"></a>
+      <a href=""><img class="games__img" src="../../../public/images/Lobby/icon_wxh.gif" alt="game__icon"></a>
     </li>
     <li class="games__item">
-      <a href=""><img class="games__img" src="../../../public/images/Lobby/遊戲icon/png/新icon公版_龍虎鬥.png" alt="game__icon"></a>
-      <a href=""><img class="games__img" src="../../../public/images/Lobby/遊戲icon/png/新icon公版_五星宏輝.png" alt="game__icon"></a>
+      <a href=""><img class="games__img" src="../../../public/images/Lobby/icon_lhd.gif" alt="game__icon"></a>
+      <a href=""><img class="games__img" src="../../../public/images/Lobby/icon_wxh.gif" alt="game__icon"></a>
+    </li>
+    <li class="games__item">
+      <a href=""><img class="games__img" src="../../../public/images/Lobby/icon_lhd.gif" alt="game__icon"></a>
+      <a href=""><img class="games__img" src="../../../public/images/Lobby/icon_wxh.gif" alt="game__icon"></a>
     </li>
   </ul>
   <!-- <div class="next__page">
