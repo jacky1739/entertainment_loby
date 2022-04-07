@@ -294,7 +294,7 @@
           color: #FFE08B;
           width: 10rem;
           text-align: center;
-          padding: .15rem .2rem;
+          padding: .15rem 0;
           font-size: calc(.01rem + 2vh);
           border-bottom: 2px solid #856E8F;
           // border-right: 2px solid #856E8F;
@@ -340,8 +340,8 @@
   }
 }
 ::-webkit-scrollbar {
-    display: none;
-  }
+  display: none;
+}
 .total__price {
   font-size: calc(.1rem + 1vh);
 }
