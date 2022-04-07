@@ -42,6 +42,7 @@
 }
 .login {
   &__img {
+    width: calc(2rem + 25vh);
     @media (max-width: 992px) {
       width: calc(.5rem + 40vw);
     }
