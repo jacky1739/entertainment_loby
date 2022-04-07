@@ -74,7 +74,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 2.8rem;
+    // width: 2.8rem;
+    width: calc(1rem + 20vh);
     height: .55rem;
     margin: 0 auto;
     margin-bottom: .1rem;
