@@ -42,7 +42,7 @@
 }
 .login {
   &__img {
-    width: calc(2rem + 25vh);
+    width: calc(1rem + 50vh);
     @media (max-width: 992px) {
       width: calc(.5rem + 40vw);
     }
@@ -101,10 +101,8 @@
     width: 1.4rem;
     height: .15rem;
     margin: 0 auto;
-    margin-bottom: .15rem;
+    margin-bottom: .13rem;
     &__word {
-      width: 1.4rem;
-      height: .25rem;
       line-height: .25rem;
       display: flex;
       justify-content: space-evenly;
