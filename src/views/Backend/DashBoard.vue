@@ -302,7 +302,7 @@
         }
       }
     }
-    &content__table__tbodyBox {
+    &__content__table__tbodyBox {
       overflow-x: scroll;
     }
     &__tbody {
